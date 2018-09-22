@@ -106,7 +106,7 @@ public class Hangman {
 	public static boolean checkGameStatus(char[] asteriskWord)
 	{
 		for (int i = 0; i < asteriskWord.length; i++){
-			if (asteriskWord[i] == '*')
+			if (asteriskWord[i] == '_')
 				return false;
 			
 		}
@@ -209,7 +209,7 @@ public class Hangman {
 	public static char[] hideWord(String word){
 		StringBuilder current = new StringBuilder();
 		for(int i=0;i<word.length();i++){
-			current.append("*");
+			current.append("_");
 		}
 		String wordSt = current.toString();
 		char[] wordC = wordSt.toCharArray();
