@@ -68,9 +68,9 @@ public class Hangman {
 		int wordIndex = Math.abs(randNum.nextInt() % wordList.size());
 		String orgWord = wordList.get(wordIndex);
 		String word = wordList.get(wordIndex).toLowerCase().replaceAll("\\s|\\-", "");
-		for (int i = 0; i < wordList.size() ; i++){
+		/*for (int i = 0; i < wordList.size() ; i++){
 			System.out.println(wordList.get(i));
-		}
+		}*/
 		char[] asteriskWord = hideWord(word);
 		boolean guessedWord = false;
 		
