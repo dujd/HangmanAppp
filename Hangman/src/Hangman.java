@@ -58,8 +58,8 @@ public class Hangman {
 			chooseCategory(3);
 			break;
 		}else {
-			
-			System.out.println(category);
+			System.out.println("Wrong category!");
+			//System.out.println(category);
 			continue;
 		} 
 		} 
@@ -189,7 +189,7 @@ public class Hangman {
 		System.out.print("Guess a character: ");
 		
 		for (int i=0;i<asteriskWord.length; i++){
-			System.out.print(asteriskWord[i]);
+			System.out.print(asteriskWord[i] + " ");
 			
 		}
 		System.out.print(">");
